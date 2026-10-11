@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport meta tag: required for responsive layout on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Your Name, a student web developer.">
+  <title>Agulto, Eugene DC.| Portfolio</title>
+
+  <!-- Fonts: Bricolage Grotesque (headings) and Figtree (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ 1. HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Your Name</a>
+
+      <!-- Hamburger button (visible on mobile only) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#home">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Dark/light mode toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ 2. HERO / ABOUT ME ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-kicker">Hi, I'm Agulto, Eugene DC.</p>
+          <h1 id="hero-title">I build clear, friendly websites.</h1>
+          <p class="hero-intro">I'm a third-year IT student who enjoys turning ideas into pages that load fast and work on any screen.</p>
+          <p class="hero-bio">I started with HTML and CSS in class and now spend my free time learning JavaScript and building small tools for friends and classmates. I like clean layouts, readable code, and projects that solve a real problem.</p>
+          <a class="btn" href="#projects">See my projects</a>
+        </div>
+        <img class="hero-photo" src="profile.svg" alt="Portrait of Agulto, Eugene DC." width="320" height="320">
+      </div>
+    </section>
+
+    <!-- ============ 3. PROJECTS ============ -->
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+        <div class="card-grid">
+
+          <article class="card">
+            <h3>Budget Buddy</h3>
+            <p>A simple expense tracker that adds up daily spending and shows a weekly total. Built with HTML, CSS, and JavaScript.</p>
+            <p class="tags">HTML · CSS · JavaScript</p>
+            <a class="card-link" href="#">View on GitHub</a>
+          </article>
+
+          <article class="card">
+            <h3>Class Schedule Planner</h3>
+            <p>A responsive timetable page where students can see their subjects, rooms, and times at a glance on a phone.</p>
+            <p class="tags">HTML · CSS Grid</p>
+            <a class="card-link" href="#">View on GitHub</a>
+          </article>
+
+          <article class="card">
+            <h3>Recipe Finder</h3>
+            <p>A searchable list of home recipes with filters for ingredients and cooking time.</p>
+            <p class="tags">HTML · CSS · JavaScript</p>
+            <a class="card-link" href="#">View on GitHub</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 4. FOOTER / CONTACT ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="contact-info">
+        <h2>Contact</h2>
+        <p>Have a question or a project in mind? Send me a message.</p>
+        <ul class="social-list">
+          <!-- Email -->
+          <li>
+            <a href="#" aria-label="Email" title="Email">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <polyline points="3,7 12,13 21,7"/>
+              </svg>
+            </a>
+          </li>
+          <!-- GitHub -->
+          <li>
+            <a href="#" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+            </a>
+          </li>
+          <!-- Facebook -->
+          <li>
+            <a href="https://www.facebook.com/eugene.agulto.10" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </li>
+          <!-- Instagram -->
+          <li>
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact form: validated in script.js -->
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name">
+          <p class="error" id="nameError" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email">
+          <p class="error" id="emailError" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+          <p class="error" id="messageError" role="alert"></p>
+        </div>
+        <button type="submit" class="btn">Send message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+    <p class="copyright">&copy; 2026 Agulto, Eugene DC. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
